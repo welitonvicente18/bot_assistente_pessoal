@@ -1,8 +1,8 @@
-const bot = require('./src/bot/telegram');
+const bot = require("./src/bot/telegram");
 
 bot
   .launch()
-  .then(() => console.log("Bot lançado com sucesso."))
+  .then(() => console.log("Verônica ativa com sucesso."))
   .catch((err) => console.error("Erro ao na comunicação com o Verônica:", err));
 
-console.log('Bot online 🚀')
+console.log("Verônica online 🚀");

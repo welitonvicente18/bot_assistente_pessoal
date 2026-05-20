@@ -3,6 +3,13 @@ const axios = require("axios");
 const API_URL = "https://localhost:11434/api/generate";
 
 async function send(text) {
+  // teste de retorno enquanto a IA não estiver funcionando
+  return {
+    message: text,
+    date: new Date(),
+    is_completed: false,
+  };
+
   if (!text) {
     throw new Error("Nenhuma mensagem fornecida para a IA.");
   }
