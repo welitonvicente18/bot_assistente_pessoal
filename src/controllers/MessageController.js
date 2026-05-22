@@ -56,9 +56,7 @@ Mensagem do usuário:
 
     await ctx.reply(data.description); // Manda mensagem
   } catch (error) {
-    console.error("Erro ao processar mensagem:", error);
-
-    await ctx.reply("Ocorreu um erro ao processar sua solicitação.");
+    await ctx.reply("Estou com problemas nos meus círcuitos.");
   }
 }
 
