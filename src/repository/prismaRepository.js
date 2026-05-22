@@ -19,4 +19,4 @@ async function task(data) {
   return tarefa;
 }
 
-module.exports = { main };
+module.exports = { task };

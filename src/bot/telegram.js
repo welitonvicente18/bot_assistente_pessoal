@@ -14,7 +14,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 // Start no bot
 bot.start(async (ctx) => {
-  const resposta = await ctx.reply("Olá usuário 🚀");
+  const resposta = await ctx.reply("Verônica online 🚀");
 });
 
 // Escuta qualquer texto
