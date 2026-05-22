@@ -10,13 +10,11 @@ const prisma = new PrismaClient({
   }),
 });
 
-async function main(message) {
-  const tarefa = await prisma.tarefa.create({
-    data: {
-      message: message.message,
-      date: message.date,
-      is_completed: message.is_completed,
-    },
+async function task(data) {
+  const tarefa = await prismaRepository.createTask({
+    task: data.task,
+    description: data.description,
+    date: data.date ? new Date(data.date) : null,
   });
   return tarefa;
 }

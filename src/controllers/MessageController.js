@@ -51,11 +51,7 @@ Mensagem do usuário:
     }
 
     if (data.success) {
-      //   await prismaRepository.createTask({
-      //     task: data.task,
-      //     description: data.description,
-      //     date: data.date ? new Date(data.date) : null,
-      //   });
+      await prismaRepository.task(data);
     }
 
     await ctx.reply(data.description); // Manda mensagem
